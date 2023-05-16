@@ -1,28 +1,33 @@
 Find changes for versions after 1.0.4 at [cypress-example-kitchensink/releases](https://github.com/cypress-io/cypress-example-kitchensink/releases)
 
-#### 1.0.4 - *(12/05/18)*
+#### 1.0.4 - _(12/05/18)_
+
 - update image placeholder links to https
 - update cy.trigger example
 - add cy.request example with query params
 - update deps
 
-#### 1.0.3 - *(12/05/18)*
+#### 1.0.3 - _(12/05/18)_
+
 - update image placeholder links to https
 - update cy.trigger example
 - add cy.request example with query params
 - update deps
 
-#### 1.0.2 - *(06/28/18)*
+#### 1.0.2 - _(06/28/18)_
+
 - updated dependencies
 - add Cypress.Screenshot.defaults test
-- improvements to build and deploy  process
+- improvements to build and deploy process
 - bump to node 8
 
-#### 1.0.1 - *(05/14/18)*
+#### 1.0.1 - _(05/14/18)_
+
 - updated README to link to correct examples folder
 - added assertion to prevUntil test
 
-#### 1.0.0 - *(04/13/18)*
+#### 1.0.0 - _(04/13/18)_
+
 - split example_spec into seperate files
 - convert all JS from ES5 -> ES6
 - update all code content to match actual specs
@@ -32,44 +37,56 @@ Find changes for versions after 1.0.4 at [cypress-example-kitchensink/releases](
 - add link to docs from every header
 - general grammar and link fixes
 
-#### 0.8.3 - *(12/19/17)*
+#### 0.8.3 - _(12/19/17)_
+
 - add platform check to cy.exec() example
 - fix typo
 
-#### 0.8.2 - *(11/30/17)*
+#### 0.8.2 - _(11/30/17)_
+
 - eslint tests and js script
 
-#### 0.8.1 - *(10/16/17)*
+#### 0.8.1 - _(10/16/17)_
+
 - updated .prev html to match test
 - added contributing doc
 
-#### 0.8.0 - *(09/10/17)*
+#### 0.8.0 - _(09/10/17)_
+
 - updated for cypress 0.20.0
 - added new cy commands
 - update support files for new scaffolding
 
 #### 0.7.0
+
 - new traversal commands
 
 #### 0.6.2
+
 - fix flaky location calls
 
 #### 0.6.1
+
 - remove .only
 
 #### 0.6.0
+
 - added stubs, spies, clocks example, fix cy.readFile
 
 #### 0.5.3
+
 - missing var
 
 #### 0.5.2
+
 - bump up default config values
 
 #### 0.5.1
+
 - prevent file server caching
 
-#### 0.5.0 - *(09/01/16)*
+#### 0.5.0 - _(09/01/16)_
+
 - renamed Fixtures section to Files
 - added examples for writeFile
 - added example for readFile
@@ -77,43 +94,57 @@ Find changes for versions after 1.0.4 at [cypress-example-kitchensink/releases](
 - fixed some formatting
 
 #### 0.4.2
+
 - rename commandTimeout -> defaultCommandTimeout
 
 #### 0.4.1
+
 - remove spacejam visit, use https
 
 #### 0.4.0
+
 - added cy.screenshot example
 
 #### 0.3.0
+
 - added cy.exec() command examples
 
 #### 0.2.3
+
 - fix for clearing 3rd party cookies after visit
 
 #### 0.2.2
+
 - removed methods on Cypress.Cookies
 
 #### 0.2.1
+
 - removed selenium references
 
 #### 0.2.0
+
 - added examples of new cypress cookie commands
 
 #### 0.1.5
+
 - removed relative cy.visit which causes errors on new projects
 
 #### 0.1.4
+
 - updated node version to 5.10.0
 
 #### 0.1.3
+
 - renamed visitTimeout option to pageLoadTimeout
 
 #### 0.1.2
+
 - updated links to be https
 
 #### 0.1.1
+
 - added cy.reload(true) example
 
 #### 0.1.0
+
 - initial release

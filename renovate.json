@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "automerge": true,
   "commitMessage": "{{semanticPrefix}}Update {{depName}} to {{newVersion}} 🌟",
   "prTitle": "{{semanticPrefix}}{{#if isPin}}Pin{{else}}Update{{/if}} dependency {{depName}} to version {{newVersion}} 🌟",
@@ -13,9 +11,7 @@
   },
   "prConcurrentLimit": 3,
   "prHourlyLimit": 2,
-  "schedule": [
-    "after 2am and before 3am on saturday"
-  ],
+  "schedule": ["after 2am and before 3am on saturday"],
   "updateNotScheduled": false,
   "timezone": "America/New_York",
   "lockFileMaintenance": {
@@ -24,10 +20,7 @@
   "separatePatchReleases": true,
   "separateMultipleMajor": true,
   "masterIssue": true,
-  "labels": [
-    "type: dependencies",
-    "renovate"
-  ],
+  "labels": ["type: dependencies", "renovate"],
   "packageRules": [
     {
       "packageNames": ["cypress"],

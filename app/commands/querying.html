@@ -150,7 +150,8 @@ cy.get('#querying .well>button:first').should('contain', 'Button')
         <div class="row">
           <div class="col-xs-7">
             <p>
-              <code>cy.get()</code> yields a jQuery object, you can get its attribute by invoking the <code>.attr()</code> method.
+              <code>cy.get()</code> yields a jQuery object, you can get its
+              attribute by invoking the <code>.attr()</code> method.
             </p>
             <pre><code class="javascript">cy.get('[data-test-id="test-example"]')
   .invoke('attr', 'data-test-id')
@@ -166,8 +167,11 @@ cy.get('[data-test-id="test-example"]')
         <div class="row">
           <div class="col-xs-7">
             <p>
-              Alternatively, chain assertions directly to the <code>cy.get()</code> call.
-              See <a href="https://on.cypress.io/assertions" target="_blank">assertions documentation</a>.
+              Alternatively, chain assertions directly to the
+              <code>cy.get()</code> call. See
+              <a href="https://on.cypress.io/assertions" target="_blank"
+                >assertions documentation</a
+              >.
             </p>
             <pre><code class="javascript">cy.get('[data-test-id="test-example"]')
   .should('have.attr', 'data-test-id', 'test-example')
@@ -179,7 +183,9 @@ cy.get('[data-test-id="test-example"]')
 
         <div class="row">
           <div class="col-xs-7">
-            <h4 id="contains"><a href="https://on.cypress.io/contains">cy.contains()</a></h4>
+            <h4 id="contains">
+              <a href="https://on.cypress.io/contains">cy.contains()</a>
+            </h4>
             <p>
               We can find elements by their content using
               <a href="https://on.cypress.io/contains"
@@ -223,7 +229,9 @@ cy.get('.query-button')
           <div class="col-xs-12"><hr /></div>
 
           <div class="col-xs-7">
-            <h4 id="within"><a href="https://on.cypress.io/within">.within()</a></h4>
+            <h4 id="within">
+              <a href="https://on.cypress.io/within">.within()</a>
+            </h4>
             <p>
               We can find elements within a specific DOM element
               <a href="https://on.cypress.io/within"><code>.within()</code></a>
@@ -262,7 +270,9 @@ cy.get('.query-button')
           <div class="col-xs-12"><hr /></div>
 
           <div class="col-xs-7">
-            <h4 id="root"><a href="https://on.cypress.io/root">cy.root()</a></h4>
+            <h4 id="root">
+              <a href="https://on.cypress.io/root">cy.root()</a>
+            </h4>
             <p>
               We can find the root DOM element<a
                 href="https://on.cypress.io/root"
@@ -292,10 +302,18 @@ cy.get('.query-ul').within(() => {
 
         <div class="row">
           <div class="col-xs-7">
-            <h4 id="best-practices"><a href="https://on.cypress.io/best-practices#Selecting-Elements">Best Practices: Selecting elements</a></h4>
+            <h4 id="best-practices">
+              <a href="https://on.cypress.io/best-practices#Selecting-Elements"
+                >Best Practices: Selecting elements</a
+              >
+            </h4>
             <p>
-              Prefer dedicated <code>data-cy</code> or <code>data-test</code> attributes to CSS class names and element IDs.
-              See detailed discussion at <a href="https://on.cypress.io/best-practices#Selecting-Elements">Best Practices: Selecting elements</a>
+              Prefer dedicated <code>data-cy</code> or
+              <code>data-test</code> attributes to CSS class names and element
+              IDs. See detailed discussion at
+              <a href="https://on.cypress.io/best-practices#Selecting-Elements"
+                >Best Practices: Selecting elements</a
+              >
             </p>
             <pre><code class="javascript">// Worst - too generic, no context
   cy.get('button').click()
@@ -322,11 +340,18 @@ cy.get('.query-ul').within(() => {
 
           <div class="col-xs-5">
             <div class="well" data-cy="best-practices-selecting-elements">
-              <button id="main" class="btn btn-large" name="submission" role="button" data-cy="submit">Submit</button>
+              <button
+                id="main"
+                class="btn btn-large"
+                name="submission"
+                role="button"
+                data-cy="submit"
+              >
+                Submit
+              </button>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 

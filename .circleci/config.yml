@@ -24,7 +24,7 @@ executors:
       shell: "bash.exe"
   browsers:
     docker:
-      - image: 'cypress/browsers:node-18.15.0-chrome-111.0.5563.146-1-ff-111.0.1-edge-111.0.1661.62-1'
+      - image: "cypress/browsers:node-18.15.0-chrome-111.0.5563.146-1-ff-111.0.1-edge-111.0.1661.62-1"
 
 jobs:
   win-test:
@@ -51,14 +51,14 @@ jobs:
       # - run: node ./scripts/test-execa
 
       - run:
-          name: 'Start server'
+          name: "Start server"
           command: npm run start
           background: true
 
       - run:
-          name: 'Run Cypress tests'
+          name: "Run Cypress tests"
           command: npm run e2e:record -- --env circle=true
-          no_output_timeout: '1m'
+          no_output_timeout: "1m"
       - store_artifacts:
           path: cypress\screenshots
       - store_artifacts:
@@ -91,14 +91,14 @@ jobs:
       # - run: node ./scripts/test-execa
 
       - run:
-          name: 'Start server'
+          name: "Start server"
           command: npm run start
           background: true
 
       - run:
-          name: 'Run Cypress tests'
+          name: "Run Cypress tests"
           command: npm run e2e:record:chrome -- --env circle=true
-          no_output_timeout: '1m'
+          no_output_timeout: "1m"
       - store_artifacts:
           path: cypress\screenshots
       - store_artifacts:
@@ -131,14 +131,14 @@ jobs:
       # - run: node ./scripts/test-execa
 
       - run:
-          name: 'Start server'
+          name: "Start server"
           command: npm run start
           background: true
 
       - run:
-          name: 'Run Cypress tests'
+          name: "Run Cypress tests"
           command: npm run e2e:record:firefox -- --env circle=true
-          no_output_timeout: '1m'
+          no_output_timeout: "1m"
       - store_artifacts:
           path: cypress\screenshots
       - store_artifacts:
@@ -155,8 +155,8 @@ jobs:
       - run: npx cypress cache list
       - run: npx cypress info
       - cypress/run-tests:
-          start-command: 'npm run start'
-          cypress-command: 'npx cypress run --record --group Mac build'
+          start-command: "npm run start"
+          cypress-command: "npx cypress run --record --group Mac build"
 
   release:
     executor: cypress/default
@@ -181,10 +181,10 @@ workflows:
       # runs on 3 machines, load balances tests
       # and records on Cypress Dashboard
       - cypress/run:
-          name: '3 machines'
-          post-install: 'npm run build'
-          start-command: 'npm run start'
-          cypress-command: 'npx cypress run --record --parallel --group 3x-electron on CircleCI'
+          name: "3 machines"
+          post-install: "npm run build"
+          start-command: "npm run start"
+          cypress-command: "npx cypress run --record --parallel --group 3x-electron on CircleCI"
           parallelism: 3
           post-steps:
             # show Cypress cache folder and binary versions
@@ -201,17 +201,17 @@ workflows:
 
       # run on 2 machines using Chrome browser
       - cypress/run:
-          name: '2 machines using Chrome'
-          start-command: 'npm run start'
+          name: "2 machines using Chrome"
+          start-command: "npm run start"
           install-browsers: true
-          cypress-command: 'npx cypress run --browser chrome --record --parallel --group 2x-chrome on CircleCI'
+          cypress-command: "npx cypress run --browser chrome --record --parallel --group 2x-chrome on CircleCI"
           parallelism: 2
 
       - cypress/run:
-          name: '2 machines using Firefox'
-          start-command: 'npm run start'
+          name: "2 machines using Firefox"
+          start-command: "npm run start"
           install-browsers: true
-          cypress-command: 'npx cypress run --browser firefox --record --parallel --group 2x-firefox on CircleCI'
+          cypress-command: "npx cypress run --browser firefox --record --parallel --group 2x-firefox on CircleCI"
           parallelism: 2
 
       - release:

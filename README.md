@@ -13,23 +13,23 @@ To see the kitchen sink application, visit [example.cypress.io](https://example.
 
 [![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://link.cypress.io/kitchensink-amplify-oneclick)
 
-CI | Build status | basic config file | full parallel config
-:--- | :--- | :--- | :---
-AWS Amplify Console | | [amplify.yml](amplify.yml) |
-AWS CodeBuild | | [basic/buildspec.yml](./basic/buildspec.yml) | [buildspec.yml](buildspec.yml)
-AppVeyor | [![AppVeyor CI](https://ci.appveyor.com/api/projects/status/bo4x59pha1eb18de?svg=true)](https://ci.appveyor.com/project/cypress-io/cypress-example-kitchensink) | [appveyor.yml](appveyor.yml)
-Azure Pipelines | | [basic/azure-ci.yml](basic/azure-ci.yml) | [azure-ci.yml](azure-ci.yml)
-Buddy | | [buddy.yml](buddy.yml)
-Buildkite | | [.buildkite/pipeline.yml](.buildkite/pipeline.yml)
-Circle | [![CircleCI](https://circleci.com/gh/cypress-io/cypress-example-kitchensink/tree/master.svg?style=svg)](https://circleci.com/gh/cypress-io/cypress-example-kitchensink/tree/master) | [basic/.circleci/config.yml](basic/.circleci/config.yml) | [.circleci/config.yml](.circleci/config.yml)
-Codeship Pro | | [basic/codeship-pro](basic/codeship-pro)
-GitHub Actions | [![Parallel tests status](https://github.com/cypress-io/cypress-example-kitchensink/workflows/Cypress%20parallel%20tests/badge.svg?branch=master)](https://github.com/cypress-io/cypress-example-kitchensink/actions) | [single.yml](.github/workflows/single.yml) | [parallel.yml](.github/workflows/parallel.yml)
-GitLab | | [basic/.gitlab-ci.yml](basic/.gitlab-ci.yml) | [.gitlab-ci.yml](.gitlab-ci.yml)
-Heroku CI | | [basic/app.json](basic/app.json) |
-Jenkins | | [basic/Jenkinsfile](basic/Jenkinsfile) | [Jenkinsfile](Jenkinsfile)
-Netlify | [![Netlify Status](https://api.netlify.com/api/v1/badges/016bd76b-ebfd-4071-94d9-8668afbb56f7/deploy-status)](https://app.netlify.com/sites/cypress-example-kitchensink/deploys) | [netlify.toml](netlify.toml) |
-Semaphore 2.0 | | [basic/.semaphore.yml](basic/.semaphore.yml) | [.semaphore/semaphore.yml](.semaphore/semaphore.yml)
-Travis | | [basic/.travis.yml](basic/.travis.yml) | [.travis.yml](.travis.yml)
+| CI                  | Build status                                                                                                                                                                                                          | basic config file                                        | full parallel config                                 |
+| :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- | :--------------------------------------------------- |
+| AWS Amplify Console |                                                                                                                                                                                                                       | [amplify.yml](amplify.yml)                               |
+| AWS CodeBuild       |                                                                                                                                                                                                                       | [basic/buildspec.yml](./basic/buildspec.yml)             | [buildspec.yml](buildspec.yml)                       |
+| AppVeyor            | [![AppVeyor CI](https://ci.appveyor.com/api/projects/status/bo4x59pha1eb18de?svg=true)](https://ci.appveyor.com/project/cypress-io/cypress-example-kitchensink)                                                       | [appveyor.yml](appveyor.yml)                             |
+| Azure Pipelines     |                                                                                                                                                                                                                       | [basic/azure-ci.yml](basic/azure-ci.yml)                 | [azure-ci.yml](azure-ci.yml)                         |
+| Buddy               |                                                                                                                                                                                                                       | [buddy.yml](buddy.yml)                                   |
+| Buildkite           |                                                                                                                                                                                                                       | [.buildkite/pipeline.yml](.buildkite/pipeline.yml)       |
+| Circle              | [![CircleCI](https://circleci.com/gh/cypress-io/cypress-example-kitchensink/tree/master.svg?style=svg)](https://circleci.com/gh/cypress-io/cypress-example-kitchensink/tree/master)                                   | [basic/.circleci/config.yml](basic/.circleci/config.yml) | [.circleci/config.yml](.circleci/config.yml)         |
+| Codeship Pro        |                                                                                                                                                                                                                       | [basic/codeship-pro](basic/codeship-pro)                 |
+| GitHub Actions      | [![Parallel tests status](https://github.com/cypress-io/cypress-example-kitchensink/workflows/Cypress%20parallel%20tests/badge.svg?branch=master)](https://github.com/cypress-io/cypress-example-kitchensink/actions) | [single.yml](.github/workflows/single.yml)               | [parallel.yml](.github/workflows/parallel.yml)       |
+| GitLab              |                                                                                                                                                                                                                       | [basic/.gitlab-ci.yml](basic/.gitlab-ci.yml)             | [.gitlab-ci.yml](.gitlab-ci.yml)                     |
+| Heroku CI           |                                                                                                                                                                                                                       | [basic/app.json](basic/app.json)                         |
+| Jenkins             |                                                                                                                                                                                                                       | [basic/Jenkinsfile](basic/Jenkinsfile)                   | [Jenkinsfile](Jenkinsfile)                           |
+| Netlify             | [![Netlify Status](https://api.netlify.com/api/v1/badges/016bd76b-ebfd-4071-94d9-8668afbb56f7/deploy-status)](https://app.netlify.com/sites/cypress-example-kitchensink/deploys)                                      | [netlify.toml](netlify.toml)                             |
+| Semaphore 2.0       |                                                                                                                                                                                                                       | [basic/.semaphore.yml](basic/.semaphore.yml)             | [.semaphore/semaphore.yml](.semaphore/semaphore.yml) |
+| Travis              |                                                                                                                                                                                                                       | [basic/.travis.yml](basic/.travis.yml)                   | [.travis.yml](.travis.yml)                           |
 
 You can find all CI results recorded on the Cypress Cloud [![Cypress Cloud](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/simple/4b7344/master&style=flat&logo=cypress)](https://cloud.cypress.io/projects/4b7344/runs)
 
@@ -43,18 +43,18 @@ Cypress team has created a full workshop showing how to run Cypress on popular C
 
 ## CI Community Examples
 
-CI | Url
-:--- | :--- |
-IBM Cloud CI | [Cloud Foundry](https://github.com/iamgollum/cypress-example-kitchensink/tree/281-ibm-cloud-pipeline)
-GitLab CI | [Example caching when installing using Yarn](https://gitlab.com/bahmutov/cypress-yarn-gitlab-ci-example)
-CodeFresh | [bahmutov/cypress-codefresh-example](https://github.com/bahmutov/cypress-codefresh-example)
+| CI           | Url                                                                                                      |
+| :----------- | :------------------------------------------------------------------------------------------------------- |
+| IBM Cloud CI | [Cloud Foundry](https://github.com/iamgollum/cypress-example-kitchensink/tree/281-ibm-cloud-pipeline)    |
+| GitLab CI    | [Example caching when installing using Yarn](https://gitlab.com/bahmutov/cypress-yarn-gitlab-ci-example) |
+| CodeFresh    | [bahmutov/cypress-codefresh-example](https://github.com/bahmutov/cypress-codefresh-example)              |
 
 ## Help + Testing
 
 **If you get stuck, here is more help:**
 
-* [Discord Chat](https://on.cypress.io/discord) to connect to our community
-* [Cypress Docs](https://on.cypress.io)
+- [Discord Chat](https://on.cypress.io/discord) to connect to our community
+- [Cypress Docs](https://on.cypress.io)
 
 ### 1. Fork this repo
 

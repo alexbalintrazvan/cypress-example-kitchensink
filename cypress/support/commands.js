@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('bookStoreLogin', (username, password) => {
+  const inputName = username ?? Cypress.env('bookStoreUser')
+  const inputPassword = password ?? Cypress.env('bookStorePassword')
+
+  console.log('NAMES ', username, Cypress.env('bookStoreUser'), inputName)
+
+  cy.get('#userName').type(inputName)
+  cy.get('#password').type(inputPassword)
+  cy.get('#login').click()
+})

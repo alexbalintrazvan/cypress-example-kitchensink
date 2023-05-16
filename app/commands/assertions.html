@@ -104,10 +104,16 @@
           </div>
 
           <div class="col-xs-7">
-            <h4 id="should"><a href="https://on.cypress.io/should" target="_blank">.should()</a></h4>
+            <h4 id="should">
+              <a href="https://on.cypress.io/should" target="_blank"
+                >.should()</a
+              >
+            </h4>
             <p>
               To make an assertion about the current subject, use the
-              <a href="https://on.cypress.io/should" target="_blank"><code>.should()</code></a>
+              <a href="https://on.cypress.io/should" target="_blank"
+                ><code>.should()</code></a
+              >
               command.
             </p>
             <pre><code class="javascript">cy.get('.assertion-table')
@@ -135,8 +141,14 @@ cy.get('.assertion-table')
   .contains('td', /column content/i)
   .should('be.visible')</code></pre>
 
-            <p>Note: find even more examples of matching element's text content in this
-              <a href="https://on.cypress.io/using-cypress-faq#How-do-I-get-an-element’s-text-contents" target="_blank">FAQ answer</a>.
+            <p>
+              Note: find even more examples of matching element's text content
+              in this
+              <a
+                href="https://on.cypress.io/using-cypress-faq#How-do-I-get-an-element’s-text-contents"
+                target="_blank"
+                >FAQ answer</a
+              >.
             </p>
           </div>
           <div class="col-xs-5">
@@ -173,10 +185,14 @@ cy.get('.assertion-table')
           <div class="col-xs-12"><hr /></div>
 
           <div class="col-xs-7">
-            <h4 id="and"><a href="https://on.cypress.io/and" target="_blank">.and()</a></h4>
+            <h4 id="and">
+              <a href="https://on.cypress.io/and" target="_blank">.and()</a>
+            </h4>
             <p>
               To chain multiple assertions together, use the
-              <a href="https://on.cypress.io/and" target="_blank"><code>.and()</code></a>
+              <a href="https://on.cypress.io/and" target="_blank"
+                ><code>.and()</code></a
+              >
               command.
             </p>
             <pre><code class="javascript">cy.get('.assertions-link')
@@ -186,7 +202,10 @@ cy.get('.assertion-table')
           </div>
           <div class="col-xs-5">
             <div class="well">
-              <a class="assertions-link active" href="https://on.cypress.io" target="_blank"
+              <a
+                class="assertions-link active"
+                href="https://on.cypress.io"
+                target="_blank"
                 >Cypress Docs</a
               >
             </div>
@@ -203,7 +222,8 @@ cy.get('.assertion-table')
             <h4 id="expect">expect</h4>
             <p>
               To make a BDD assertion about a specified subject, use
-              <a href="https://on.cypress.io/assertions" target="_blank"><code>expect</code></a
+              <a href="https://on.cypress.io/assertions" target="_blank"
+                ><code>expect</code></a
               >.
             </p>
           </div>
@@ -223,7 +243,8 @@ expect('FooBar').to.match(/bar$/i)</code></pre>
             <h4 id="assert">assert</h4>
             <p>
               To make a TDD assertion about a specified subject, use
-              <a href="https://on.cypress.io/assertions" target="_blank"><code>assert</code></a
+              <a href="https://on.cypress.io/assertions" target="_blank"
+                ><code>assert</code></a
               >.
             </p>
             <pre><code class="javascript">const person = {
@@ -236,7 +257,11 @@ assert.isObject(person, 'value is object')</code></pre>
           <div class="col-xs-12"><hr /></div>
 
           <div class="col-xs-12">
-            <h3><a href="https://on.cypress.io/should#Function" target="_blank">Should with callback function</a></h3>
+            <h3>
+              <a href="https://on.cypress.io/should#Function" target="_blank"
+                >Should with callback function</a
+              >
+            </h3>
             <hr />
           </div>
 
@@ -338,10 +363,13 @@ assert.isObject(person, 'value is object')</code></pre>
 
           <div class="col-xs-12">
             <p>
-              We <a href="https://on.cypress.io/conditional-testing">strongly recommend that your tests are deterministic</a>.
-              But sometimes you might need to match text between two elements, and you
-              do not know what that text should be. Save the value from the first element,
-              then compare it from a <code>should(cb)</code> callback.
+              We
+              <a href="https://on.cypress.io/conditional-testing"
+                >strongly recommend that your tests are deterministic</a
+              >. But sometimes you might need to match text between two
+              elements, and you do not know what that text should be. Save the
+              value from the first element, then compare it from a
+              <code>should(cb)</code> callback.
             </p>
           </div>
 
@@ -381,9 +409,12 @@ cy.get('.two-elements')
 
           <div class="col-xs-12">
             <p>
-              Remember that Cypress only <a href="https://on.cypress.io/retry-ability">retries the very last command</a>,
-              if it allows retrying. If you need to perform additional steps before running an assertion,
-              you can use <code>.should(callbackFn)</code> to retry multiple operations.
+              Remember that Cypress only
+              <a href="https://on.cypress.io/retry-ability"
+                >retries the very last command</a
+              >, if it allows retrying. If you need to perform additional steps
+              before running an assertion, you can use
+              <code>.should(callbackFn)</code> to retry multiple operations.
             </p>
           </div>
 
@@ -396,7 +427,7 @@ cy.get('.two-elements')
     const n = parseFloat($div.text())
     expect(n).to.be.gte(1).and.be.lte(10)
   })</code></pre>
-</div>
+          </div>
 
           <div class="col-xs-5">
             <div class="well">
@@ -404,10 +435,10 @@ cy.get('.two-elements')
                 Random number: <span id="random-number">🎁</span>
               </div>
               <script>
-                const el = document.getElementById('random-number')
+                const el = document.getElementById("random-number");
                 setTimeout(() => {
-                  el.innerText = Math.floor(Math.random() * 10 + 1)
-                }, 1500)
+                  el.innerText = Math.floor(Math.random() * 10 + 1);
+                }, 1500);
               </script>
             </div>
           </div>

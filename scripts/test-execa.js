@@ -1,5 +1,5 @@
-const execa = require('execa')
+const execa = require("execa");
 
-execa('echo Hello', {
+execa("echo Hello", {
   shell: true,
-}).then(console.log)
+}).then(console.log);
