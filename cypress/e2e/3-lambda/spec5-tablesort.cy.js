@@ -6,7 +6,7 @@ describe('Table Sort & Search Demo', () => {
     )
   })
 
-  const testCases = [{
+  let testCases = [{
     column: 'Name',
     clicks: 0,
     descending: false
@@ -24,7 +24,7 @@ describe('Table Sort & Search Demo', () => {
     descending: false
   }]
 
-  testCases.concat(testCases.map((testCase) => ({
+  testCases = testCases.concat(testCases.map((testCase) => ({
     column: testCase.column,
     clicks: testCase.clicks + 1,
     descending: true
@@ -43,7 +43,10 @@ describe('Table Sort & Search Demo', () => {
         cy.get('#example td.sorting_1').each((td) => {
           const currentItem = td.text()
           const testItems = [prevItem, currentItem]
-          const sortedItems = [...testItems].sort()
+          let sortedItems = [...testItems].sort()
+          if (descending && prevItem) {
+            sortedItems = sortedItems.reverse()
+          }
 
           expect(testItems).to.have.ordered.members(sortedItems)
 
